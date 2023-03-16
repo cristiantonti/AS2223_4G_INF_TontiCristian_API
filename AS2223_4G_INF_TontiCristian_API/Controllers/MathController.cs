@@ -13,7 +13,7 @@ namespace AS2223_4G_INF_TontiCristian_API.Controllers
             string ris;
             if (number % 2 == 0)
             {
-                ris = "pari"; 
+                ris = "pari";
             }
             else
             {
@@ -58,4 +58,5 @@ namespace AS2223_4G_INF_TontiCristian_API.Controllers
                 }
             }
         }
+    }
 }
