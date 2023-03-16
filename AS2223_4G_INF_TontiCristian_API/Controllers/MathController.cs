@@ -2,7 +2,7 @@
 
 namespace AS2223_4G_INF_TontiCristian_API.Controllers
 {
-    public class HomeController : Controller
+    public class MathController : Controller
     {
         public IActionResult Index()
         {
