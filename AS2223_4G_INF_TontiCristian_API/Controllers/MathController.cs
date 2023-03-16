@@ -12,16 +12,27 @@ namespace AS2223_4G_INF_TontiCristian_API.Controllers
         {
             return View();
         }
-        public string CheckEvenOrOdd(int number)
+        public JsonResult GetMath(int number)
         {
+            string ris;
             if (number % 2 == 0)
             {
-                return "Il numero è pari";
+                ris = "pari"; 
             }
             else
             {
-                return "Il numero è dispari";
+                ris = "dispari";
             }
+            return Json(new { output = number, ris, status = "OK" });
         }
+        [HttpGet("GetFattoriale")]
+        public int CalcoloFattoriale(int number)
+        {
+            int ris = 1;
+            for (int i = 2; i <= number; i++)
+            {
+                ris *= i;
+            }
+            return ris;
     }
 }
